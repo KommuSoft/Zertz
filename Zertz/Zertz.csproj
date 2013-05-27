@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8214235D-0844-4C87-9365-56368BBE204E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>GTZ</RootNamespace>
+    <AssemblyName>GTZ</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="IScene.cs" />
+    <Compile Include="ILoadable.cs" />
+    <Compile Include="IRenderable.cs" />
+    <Compile Include="MeshBuilder.cs" />
+    <Compile Include="TextureFactory.cs" />
+    <Compile Include="WaterSimulator.cs" />
+    <Compile Include="ZertzPiece.cs" />
+    <Compile Include="ZertzBoard.cs" />
+    <Compile Include="ZertzBallType.cs" />
+    <Compile Include="InvalidZertzActionException.cs" />
+    <Compile Include="InvalidZertzException.cs" />
+    <Compile Include="ITimeSensitive.cs" />
+    <Compile Include="IUnloadable.cs" />
+    <Compile Include="NeededBeforeExecutionAttribute.cs" />
+    <Compile Include="Maths.cs" />
+    <Compile Include="Colors.cs" />
+    <Compile Include="Texture.cs" />
+    <Compile Include="IGame.cs" />
+    <Compile Include="IPlayer.cs" />
+    <Compile Include="ZertzGame.cs" />
+    <Compile Include="ZertzPlayer.cs" />
+    <Compile Include="IStreamable.cs" />
+    <Compile Include="HexLocation.cs" />
+    <Compile Include="ZertzMoveCreator.cs" />
+    <Compile Include="HexLocationTest.cs" />
+    <Compile Include="ZertzBallContainer.cs" />
+    <Compile Include="ZertzBallContainerTest.cs" />
+    <Compile Include="FantasyNameCreator.cs" />
+    <Compile Include="Camera.cs" />
+    <Compile Include="IKeyboardListener.cs" />
+    <Compile Include="ZertzCupRenderer.cs" />
+    <Compile Include="ZertzBallRenderer.cs" />
+    <Compile Include="Unloader.cs" />
+    <Compile Include="UniversalRandom.cs" />
+    <Compile Include="RenderContainer.cs" />
+    <Compile Include="SceneBase.cs" />
+    <Compile Include="IShape2D.cs" />
+    <Compile Include="Ring.cs" />
+    <Compile Include="ZertzRingRenderer.cs" />
+    <Compile Include="ILocatable.cs" />
+    <Compile Include="LocatableBase.cs" />
+    <Compile Include="ISelectionRenderable.cs" />
+    <Compile Include="ISelectable.cs" />
+    <Compile Include="HexDirection.cs" />
+    <Compile Include="ZertzBoardTest.cs" />
+    <Compile Include="FlagSimulator.cs" />
+    <Compile Include="Caretaker.cs" />
+    <Compile Include="IHeightGrid.cs" />
+    <Compile Include="IZertzActionHandler.cs" />
+    <Compile Include="ZertzTileRenderer.cs" />
+    <Compile Include="RenderMoveManager.cs" />
+    <Compile Include="IRenderMoveable.cs" />
+    <Compile Include="MovableLocatableBase.cs" />
+    <Compile Include="IZertzTriggerListener.cs" />
+    <Compile Include="ZertzBallContainerType.cs" />
+    <Compile Include="ZertzContainerRenderer.cs" />
+    <Compile Include="MessageBoard.cs" />
+    <Compile Include="OpenGLFont.cs" />
+    <Compile Include="IMessagePoster.cs" />
+    <Compile Include="ZertzBoardRenderer.cs" />
+    <Compile Include="LinuxFlag.cs" />
+    <Compile Include="IPhysical.cs" />
+    <Compile Include="VertexT2fN3fV3f.cs" />
+    <Compile Include="TurnIndicator.cs" />
+    <Compile Include="EgyptInformation.cs" />
+    <Compile Include="ISizable.cs" />
+    <Compile Include="GraphicsUtils.cs" />
+    <Compile Include="StateIndicator.cs" />
+    <Compile Include="SizableBase.cs" />
+    <Compile Include="ZertzGameScene.cs" />
+    <Compile Include="OpenGLComponent.cs" />
+    <Compile Include="ILocatable2d.cs" />
+    <Compile Include="TopMenuScene.cs" />
+    <Compile Include="ComponentContainer.cs" />
+    <Compile Include="OpenGLLargeButtonControl.cs" />
+    <Compile Include="PrologueScene.cs" />
+    <Compile Include="PopupBook.cs" />
+    <Compile Include="PopupBookItem.cs" />
+    <Compile Include="SubtitleRenderer.cs" />
+    <Compile Include="SceneLoader.cs" />
+    <Compile Include="PopupBookRopeItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Drawing" />
+    <Reference Include="nunit.framework">
+      <Package>mono-nunit</Package>
+    </Reference>
+    <Reference Include="Mono.Posix" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="OpenTK.Compatibility">
+      <HintPath>OpenTK.Compatibility.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK">
+      <HintPath>OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl">
+      <HintPath>OpenTK.GLControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="resources\EarthElevation_2048x1024.jpg" />
+    <EmbeddedResource Include="resources\EarthMap_2048x1024.jpg" />
+    <EmbeddedResource Include="resources\gods.png" />
+    <EmbeddedResource Include="resources\popbook_bg.jpg" />
+    <EmbeddedResource Include="resources\book.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\font.dat" />
+  </ItemGroup>
+</Project>
