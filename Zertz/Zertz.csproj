@@ -7,8 +7,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{8214235D-0844-4C87-9365-56368BBE204E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>GTZ</RootNamespace>
-    <AssemblyName>GTZ</AssemblyName>
+    <RootNamespace>Zertz</RootNamespace>
+    <AssemblyName>Zertz</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
